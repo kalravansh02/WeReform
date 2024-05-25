@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeReform</title>
+  </head>
+  <body>
+    <nav class="navbar" id="navb">
+      <div>
+        <a href="index.html"
+          ><img id="logo" src="./images/logo.png" height="60px" width="auto"
+        /></a>
+      </div>
+      <div id="name">
+        <img src="./images/wereform2.png" alt="wereform" height="60px" />
+      </div>
+      <div></div>
+    </nav>
+    <header>
+      <div
+        style="
+          margin-top: 32px;
+          margin-right: 12px;
+          z-index: 3;
+          position: fixed;
+        "
+      >
+        <img src="./images/cart.png" alt="cart" height="30px" />
+      </div>
+      <div class="nav">
+        <input type="checkbox" />
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+        <div class="menu">
+          <p><a href="index.html">Home</a></p>
+          <p><a href="aboutus.html">About</a></p>
+          <p><a href="buy.html">Buy</a></p>
+          <p><a href="sell.html">Sell</a></p>
+          <p><a href="contactus.html">Contact&nbsp;us</a></p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="mainc">
+        <div class="register">
+          <h2 style="text-align: center">WE ARE HAPPY TO SERVE YOU</h2>
+          <form id="register">
+            <div class="ftext">
+              <label>First Name</label>
+              <input
+                type="text"
+                name="fname"
+                id="lname"
+                placeholder="Enter Your Name"
+              />
+            </div>
+            <br />
+            <div class="ftext">
+              <label for="">Email Id</label>
+              <input
+                type="email"
+                name="email"
+                id="lname"
+                placeholder="Enter Your valid Email"
+              />
+            </div>
+            <br />
+            <div class="ftext"><label>Details</label></div>
+            <br />
+            <textarea id="desc" cols="66" rows="5"></textarea>
+            <br />
+            <input type="submit" value="submit" name="submit" id="submit" />
+          </form>
+        </div>
+        <div id="contactus">Get in touch with us!</div>
+      </section>
+    </main>
+    <script type="text/javascript">
+      var nav = document.getElementById('navb');
+      window.onscroll = function () {
+        if (window.pageYOffset > 0) {
+          nav.style.background = "#92c6af";
+        }
+        else {
+          nav.style.background = "transparent";
+        }
+      }
+    </script>
+     <footer>
+      <div class="footer">
+          <div class="f1" >
+              <h3>Useful Links</h3>
+              <a href="aboutus.html">About</a>
+              <a href="contactus.html">Contact</a>
+              <a href="buy.html">Shop</a>
+              <a href="index.html">Home</a>
+          </div>
+          <div>
+              <h3>NEWSLETTER</h3>
+              <form id="form2">
+                  <input type="text" placeholder="Your Email Address">
+                  <button type="submit">SUBSCRIBE NOW</button>
+              </form>
+          </div>
+  
+          <div >
+              <h3>CONTACT</h3>
+              <p>MAIT, Rohini , Sector-22<br>Delhi, New Delhi, IN</p>
+          </div>
+      </div>
+    <div class="copyright"><p> 2022 ©️ Copyright ~ All Rights Reserved WeReform Inc.</p></div>
+  </footer>
+  </body>
+</html>

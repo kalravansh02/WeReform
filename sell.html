@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeReform</title>
+</head>
+
+<body>
+  <nav class="navbar" id="navb">
+    <div>
+      <a href="index.html"><img id="logo" src="./images/logo.png" height="60px" width="auto" /></a>
+    </div>
+    <div id="name">
+      <img src="./images/wereform2.png" alt="wereform" height="60px" />
+    </div>
+    <div></div>
+  </nav>
+  <header>
+    <div class="nav">
+      <input type="checkbox" />
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+      <div class="menu">
+        <p><a href="index.html">Home</a></p>
+        <p><a href="aboutus.html">About</a></p>
+        <p><a href="buy.html">Buy</a></p>
+        <p><a href="sell.html">Sell</a></p>
+        <p><a href="contactus.html">Contact&nbsp;us</a></p>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="sec">
+      <div class="register registers">
+        <h2>Sell Your Items Here!</h2>
+        <form id="sell" method="post">
+          <!-- category -->
+          <h3>Include Some Details</h3>
+          <div class="ftext">
+            <label>Category:</label>
+            <select name="category" id="lname">
+              <option value="">---Select a category---</option>
+              <option value="Mobile">Mobile</option>
+              <option value="Furnitures">Furnitures</option>
+              <option value="Cars&Automobiles">Cars&Automobiles</option>
+              <option value="Fashion">Fashion</option>
+              <option value="Sports">Sports</option>
+              <option value="Books&stationaries">Books&Stationaries</option>
+              <option value="Plastic">Plastic</option>
+              <option value="E-Waste">E-Waste</option>
+              <option value="Others">Others</option>
+            </select>
+          </div>
+          <br />
+
+          <!-- Ad Title -->
+          <div class="ftext">
+            <label>Ad-Title:</label>
+            <input type="text" name="title" id="lname" placeholder="Samsung-Galaxy-S13" />
+          </div>
+
+          <!-- Ad-description -->
+          <label><br />Ad-Description:</label>
+          <br /><br>
+          <textarea id="desc" cols="70" rows="10"></textarea>
+
+          <br>
+          <hr />
+
+          <!-- Pricing -->
+          <h1>Set A Price</h1>
+          <div class="ftext">
+            <label>Price:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&#8377</label>
+            <input type="number" min="0.01" step="0.01" id="lname" />
+          </div>
+          <br />
+
+          <!-- negotiation -->
+          Negotiable<input type="radio" class="negotiation" name="negotiation" />
+          &nbsp;&nbsp; Non-Negotiable
+          <input type="radio" class="negotiation" name="negotiation" />
+          <br />
+          <hr />
+
+          <!-- image -->
+          <h1 class="images">Upload Photos Here:</h1>
+          <input type="file">
+          <br />
+          <hr />
+
+          <!-- location State -->
+          <h1>Confirm Your Location</h1>
+          <div class="ftext"><label for="">State:</label>
+            <select name="State" id="lname">
+              <option value="State">---Select Your State---</option>
+              <option value="Andaman&Nicobar">Andaman&Nicobar/option></option>
+              <option value="Andhra Pradesh">Andhra pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chanddigarh">Chandigarh</option>
+              <option value="Chhatisgarh">Chhatisgarh</option>
+              <option value="Dadra&Nagar Haveli">Dadra&Nagar Haveli</option>
+              <option value="Daman&Diu">Daman&Diu</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Hiamachal Pradesh">Himachal Pradesh</option>
+              <option value="Jammu&Kashmir">Jammu&Kashmir</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Ladakh">Ladakh</option>
+              <option value="Lakshadweep">Lakshadweep</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Puducherry">Puducherry</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="West Bengal">West Bengal</option>
+            </select>
+          </div>
+          <br />
+
+          <!-- location city -->
+          <div class="ftext"><label for="City">City:</label>
+            <input type="text" id="lname" placeholder="Manesar" />
+          </div>
+          <br />
+
+          <!-- location pin -->
+          <div class="ftext"><label for="">Pin:</label>
+            <input type="number" id="lname" placeholder="122001" />
+          </div>
+          <hr>
+          <br>
+          <input type="submit" value="submit" name="submit" id="submit" style="margin-left: 40px;" />
+        </form>
+      </div>
+    </section>
+  </main>
+  <script type="text/javascript">
+    var nav = document.getElementById('navb');
+    window.onscroll = function () {
+      if (window.pageYOffset > 0) {
+        nav.style.background = "#92c6af";
+      }
+      else {
+        nav.style.background = "transparent";
+      }
+    }
+  </script>
+   <footer>
+    <div class="footer">
+        <div class="f1" >
+            <h3>Useful Links</h3>
+            <a href="aboutus.html">About</a>
+            <a href="contactus.html">Contact</a>
+            <a href="buy.html">Shop</a>
+            <a href="index.html">Home</a>
+        </div>
+        <div>
+            <h3>NEWSLETTER</h3>
+            <form id="form2">
+                <input type="text" placeholder="Your Email Address">
+                <button type="submit">SUBSCRIBE NOW</button>
+            </form>
+        </div>
+
+        <div >
+            <h3>CONTACT</h3>
+            <p>MAIT, Rohini , Sector-22<br>Delhi, New Delhi, IN</p>
+        </div>
+    </div>
+  <div class="copyright"><p> 2022 ©️ Copyright ~ All Rights Reserved WeReform Inc.</p></div>
+</footer>
+</body>
+
+</html>

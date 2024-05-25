@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WeReform</title>
+</head>
+
+<!-- <script src="//code.tidio.co/v7xj6nuvgsrtubdua17faftdnw5aboqc.js" async></script> -->
+
+<body>
+  <nav class="navbarm">
+    <div style="margin-right: 0px">
+      <a href="index.html"><img id="logo" src="./images/logo.png" height="80px" width="auto" /></a>
+    </div>
+    <div id="trash">INDIA'S FIRST RECYCLING OPERATOR</div>
+  </nav>
+
+  <header>
+    <div style="
+          margin-top: 32px;
+          margin-right: 12px;
+          z-index: 3;
+          position: fixed;
+        ">
+      <img src="./images/cart.png" alt="cart" height="30px" />
+    </div>
+    <div class="nav">
+      <input type="checkbox" />
+      <span class="top"></span>
+      <span class="middle"></span>
+      <span class="bottom"></span>
+      <div class="menu">
+        <p><a href="index.html">Home</a></p> 
+        <p><a href="aboutus.html">About</a></p>
+        <p><a href="buy.html">Buy</a></p>
+        <p><a href="sell.html">Sell</a></p>
+        <p><a href="contactus.html">Contact&nbsp;us</a></p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="mainc">
+      <section class="we">
+        <div>
+          <img id="wereform" src="./images/wereform2.png" alt="wereform" />
+        </div>
+
+        <div class="buysell">
+          <div id="sell">
+            <a href="sell.html"><img class="bt" src="./images/sell.png" alt="sell" />
+            </a>
+          </div>
+          <div id="buy">
+            <a href="buy.html"><img class="bt" src="./images/buy.png" alt="sell" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="register">
+          <h2 style="text-align: center">REGISTER HERE</h2>
+
+
+          <form id="register" name="submit-to-google-sheet">
+            <div class="ftext">
+              <label>First Name</label>
+              <input type="text" name="firstname" id="lname" placeholder="Enter Your First Name" required/>
+            </div>
+            <br />
+            <div class="ftext">
+              <label>Last Name</label>
+              <input type="text" name="lastname" id="lname" placeholder="Enter Your Last Name" required/>
+            </div>
+            <br />
+            <div class="ftext">
+              <label for="">Your Age</label>
+              <input type="number" min="0" name="age" id="lname" placeholder="How Old Are You?" />
+            </div>
+            <br />
+            <div class="ftext">
+              <label for="">Email Id</label>
+              <input type="email" name="email" id="lname" placeholder="Enter Your valid Email" required />
+            </div>
+            <br />
+            <div class="ftext">
+              <label for="gender">Gender</label>
+              <select name="gender" id="lname">
+                <optgroup>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Others</option>
+                  <option>Prefer not say</option>
+                </optgroup>
+              </select>
+            </div>
+            <br />
+            <br />
+            <button type="submit" id="submit" onclick="display()">Submit</button>
+          </form>
+
+          <h1 class="random" id="randomMessage">Message Successfully Sent!</h1>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
